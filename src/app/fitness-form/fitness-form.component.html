@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col">
+        <form (ngSubmit)="onAdd()" [formGroup]="recordForm">
+            <div class="form-group">
+                <label for="day"> Day </label>
+                <input type="text" class="form-control" formControlName="day">
+
+                <label for="workout_sts"> Workout Status </label>
+                <input type="text" class="form-control" formControlName="workout_sts">
+            </div>
+            <button  type="add" class="btn btn-success"> Add </button>
+
+        </form>
+    </div>
+</div>

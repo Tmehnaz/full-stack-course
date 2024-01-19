@@ -1,0 +1,20 @@
+<h2> Stay Fit, Stay Happy !!!  </h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th> Day </th>
+            <th> Workout Status </th>
+            <th> Update </th>
+            
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let recordEntry of recordEntries; let i = index">
+            <td> {{recordEntry.day}} </td>
+            <td> {{recordEntry.workout_sts}} </td>
+            <td> <button (click)="onEdit(records.id)" class=" btn btn-light"> Edit </button>
+            </td>
+        </tr> 
+    </tbody>
+</table>
